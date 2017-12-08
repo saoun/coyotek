@@ -154,6 +154,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav .menu-2 li.shopping-cart {
   float: right;
+  padding-top: 5px;
 }
 .fh5co-nav .menu-2 li a.cart {
   color: black;
@@ -168,7 +169,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 10px 6px;
   line-height: 0;
   font-size: 11px;
-  background: #d1c286;
+  background: #5a5a5a;
   color: white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
