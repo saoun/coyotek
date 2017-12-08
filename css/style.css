@@ -184,10 +184,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   list-style: none;
   display: inline-block;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
 }
 .fh5co-nav ul li a {
-  font-size: 13px;
+  font-size: 15px;
   padding: 30px 10px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
