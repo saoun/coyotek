@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav {
   padding: 18px 0;
   background: #fff;
+  margin-bottom: -64px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -1686,6 +1687,13 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #coyologo {
   height: 100px;
+  float: left;
+  position: relative;
+  z-index: 1000;
+}
+
+#coyoteklogo {
+  float: left;
 }
 
 /*# sourceMappingURL=style.css.map */
