@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -1721,7 +1721,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .product-image {
-  width: 80%;
+  width: 70%;
   margin-bottom: 100px;
 }
 
