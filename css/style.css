@@ -773,7 +773,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .feature-center .icon {
   width: 90px;
   height: 90px;
-  background: #003979;
+  background: #023CFF;
   display: table;
   text-align: center;
   margin: 0 auto 30px auto;
@@ -1535,21 +1535,21 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #023979;
+  background: #023CFF;
   color: #fff;
-  border: 2px solid #023979;
+  border: 2px solid #023CFF;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #023979 !important;
-  border-color: #023979 !important;
+  background: #023CFF !important;
+  border-color: #023CFF !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
   color: #828282;
-  border: 2px solid #023979;
+  border: 2px solid #023CFF;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #023979;
+  background: #023CFF;
   color: #fff;
 }
 
