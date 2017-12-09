@@ -1,6 +1,6 @@
 /*Neon*/
 
-.icon {
+.neon {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -8,7 +8,7 @@
   color: #023CFF;
 }
 
-.icon:hover {
+.neon:hover {
   -webkit-animation: neon 1.5s ease-in-out infinite alternate;
   -moz-animation: neon 1.5s ease-in-out infinite alternate;
   animation: neon 1.5s ease-in-out infinite alternate;
