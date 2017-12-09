@@ -678,6 +678,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter {
   text-align: center;
+  background: #060606;
 }
 #fh5co-counter .counter {
   font-size: 50px;
@@ -865,7 +866,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 24px;
 }
 .product .desc h3 a {
-  color: #828282;
+  color: white;
 }
 .product .desc .price {
   letter-spacing: 2px;
@@ -1031,7 +1032,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: white;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 .fh5co-heading p {
@@ -1049,7 +1050,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-testimonial {
-  background: #efefef;
+  background: #060606;
 }
 #fh5co-testimonial .testimony-slide {
   text-align: center;
@@ -1102,10 +1103,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
-  background: #d1c286;
+  background: #060606;
 }
 #fh5co-started .fh5co-heading h2 {
-  color: #fff;
+  color: white;
   margin-bottom: 20px !important;
 }
 #fh5co-started .fh5co-heading p {
