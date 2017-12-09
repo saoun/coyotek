@@ -47,6 +47,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -66,10 +68,15 @@
     	width: 100%;
    	}
 
+   	#read-stories h3,
    	.btn-primary.btn-outline,
    	.cart span,
    	.fh5co-nav ul li a {
    		color: #ffde17;
+   	}
+
+   	#read-stories h3 {
+   		padding: 2em 0;
    	}
 
    	.fh5co-nav ul li a:hover {
@@ -121,6 +128,21 @@
 	color: #ffde17 !important;
 }
 
+.slider-text {
+	margin-top: 8em;
+}
+
+.slider-text-inner {
+	width: 100%;
+}
+
+.flexslider .slides img {
+	width: 75%;
+}
+
+a {
+	cursor: pointer;
+}
 /*glow for webkit*/
 
 
@@ -203,6 +225,27 @@
 	   setTimeout("change()", 10);
 	}
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.normal-more').hide();
+			$('.surv-more').hide();
+			$('.disrupt-more').hide();
+
+			$('.learn').click(function () {
+
+				var searchId = $(this).attr('id') + "-more";
+
+				if($(this).text() === 'Hide') {
+					$(this).text('Learn More');
+					$("."+searchId).slideUp();
+				} else {
+					$("."+searchId).slideDown();
+					$(this).text('Hide');
+				}	
+			});
+		});
+
+	</script>
   </head>
  <!-- <body onLoad="javascript:startdecrypt()"> -->
  	<body>
@@ -214,7 +257,7 @@
 		<div class="container">
 			 <div class="about-real">
 		 		<span>
-				COYOTEK is a speculative web market place used as a tool not only to create things, but to share narratives. We are using product design to materialize the real human stories behind what being an constantly surveilled immigrant means. These products are not solving a problem, but their concept is thought to disturb how surveillance has been normalized in today’s society. COYOTEK is an alternate narrative, a slightly extreme version of our reality born to bring a more human approach to the effects of surveillance on immigrants nowadays. 
+				COYOTEK is a speculative web market place used as a tool to create objects as well as to share narratives. We use product design to materialize the real human stories behind the experience of the surveilled immigrant. These products are not solving a problem, however their existence shines a light on how surveillance has been normalized in today’s society. COYOTEK is an alternative narrative, a slightly extreme version of our reality born to bring a more human approach to the negative effects of surveillance on immigrants nowadays.
 				</span>
 			</div>
 			<div class="row">
@@ -236,7 +279,7 @@
 							</ul>
 						</li>-->
 						<li><a href="#fh5co-services">Learn More</a></li>
-						<li><a href="#5299221d_1512835684">Join The Conversation</a></li>
+						<li><a href="#read-stories">Join The Conversation</a></li>
 <!-- 						<li><a href="contact.html">Contact</a></li>
  -->					</ul>
 				</div>
@@ -267,52 +310,54 @@
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
-		   						<span class="price">$800</span>
-		   						<h2>G-Chip</h2>
-                  <p>Write your history, amend your DNA. Give yourself a fresh start with our nano-chip.</p>
-			   					<p><a href="#5299221d_1512835684" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(images/background2.png);">
-		   		<div class="container">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$530</span>
-		   						<h2>Amnesix</h2>
-                  <p>Program your political ideology according to your needs. Say goodbye to stressful interrogations. Homeland security tested.</p>
-			   					<p><a href="#5299221d_1512835684" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(images/background2.png);">
-		   		<div class="container">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$750</span>
-		   						<h2>Vox</h2>
-                  <p>Change the color, tone, and amplitude of your voice. Annul your accent and distort your pitch. </p>
-			   					<p><a href="#5299221d_1512835684" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
-		   					</div>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(images/background2.png);">
-		   		<div class="container">
-		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<div class="desc">
-		   						<span class="price">$540</span>
+		   						<img src="images/stories/Acrodonta_poncho.png"/>
 		   						<h2>Acrodonta</h2>
-                  <p>Comfortable and stylish multifunctional slim jacket designed to change color when surveillance is a threat.</p>
-			   					<p><a href="#5299221d_1512835684" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
+                  <p>Migrant surveillance in the Arizona desert forces migrants through more difficult terrain in the
+Arizona desert, increasing the number of deaths and trauma for immigrants.</p>
+			   					<p><a href="#read-stories" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/background2.png);">
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<img src="images/stories/Amnesix.jpg"/>
+		   						<h2>Amnesix</h2>
+                  <p>For many immigrants is becoming increasingly hard to travel into the united states. Even Naturalized citizens get stop and searched on regular basis. </p>
+			   					<p><a href="#read-stories" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/background2.png);">
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<img src="images/stories/Cream-ridge_Driving stop.png"/>
+		   						<h2>Cream Ridge</h2>
+                  <p>Immigrants are constantly racially profile by the police. In many cities and states the police works directly with ICE, DHS and HSI to profile immigrants through programs like “Secure Communities.” </p>
+			   					<p><a href="#read-stories" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
+		   					</div>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url(images/background2.png);">
+		   		<div class="container">
+		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<div class="desc">
+		   						<img src="images/stories/Vox_Hondurans.jpg"/>
+		   						<h2>Vox_Hondurans.jpg</h2>
+                  <p>Immigrants are regularly victims of racial profiling, by law enforcement like border patrol, ice and
+the police. </p>
+			   					<p><a href="#read-stories" class="btn btn-primary btn-outline btn-lg">Read More Stories</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
@@ -331,8 +376,8 @@
 							<i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
 						</span>
 						<h3>Surveillance</h3>
-						<p>Surveillance won’t stop, but a human perspective is required to design the methods and understand the data being collected. If we start with the idea that immigrants should be excluded, then we are just using surveillance as a way of finding reasons to exclude them from society.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+						<p id="surv-content">Surveillance will not stop. Conceptualizing immigrants as undesirable individuals that must be excluded,<p class="surv-more"> only serves as a reason to exclude them from society while intensifying methods of control to the whole population. In order to protest these methods, it is necessary to design new devices that will help us maintain our human dignity as much as algorithmically possible. </p><p><a id="surv" href="javascript:$(this).trigger('click');" class="btn btn-primary btn-outline learn">Learn More</a></p></p>
+						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center">
@@ -341,8 +386,8 @@
 							<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
 						</span>
 						<h3>Disruption</h3>
-            <p>COYOTEK is our way of amplifying our current reality by designing products that are needed today to escape current surveillance methods. It was born from our anxiety of how the future could look, an anxiety that let us imagine how far our humanity could be infringed.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+            			<p id="disrupt-content">COYOTEK is our way of facing our controlled reality by designing products that are needed today to escape current surveillance methods. <p class="disrupt-more"> It was born from our anxiety of what our future could turn into, an anxiety that let us imagine how far our humanity could be infringed.</p><p><a id="disrupt" href="javascript:$(this).trigger('click');" class="btn btn-primary btn-outline learn">Learn More</a></p></p>
+						
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 text-center">
@@ -351,18 +396,20 @@
 							<i class="fa fa-microchip" aria-hidden="true"></i>
 						</span>
 						<h3>Normalization</h3>
-            <p>Immigration systems were designed based on the idea of exclusion. In response to this and to all the massive migration movements, surveillance techniques have evolved throughout history in a more specialized and invasive way, becoming a constant reminder of the lack of civil liberties for immigrants. This social control has become a “normal” part of immigrant’s lives, controlling their culture, identity and movement in the physical and digital spaces. To stop this normalization process, we need to think about alternatives that will help individuals resist this system. We need to stop normalizing, and for that we need to create disruptive narratives that would create awareness on how the future could look if we don’t start understanding the consequences this is having on human lives today.</p>
-						<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+            			<p id="normal-content">Immigration systems were designed based on the idea of exclusion. In response to this, surveillance methods <p class="normal-more"> have evolved to an extremely specialized and invasive degree, becoming a constant reminder of the lack of civil liberties for immigrants. This social control has become a “normal” part of immigrant’s lives, controlling their culture, identity and movement into the physical and digital spaces.  COYOTEK enables new disruptive narratives to help individuals resist this system.</p><p><a id="normal" href="javascript:$(this).trigger('click');" class="btn btn-primary btn-outline learn">Learn More</a></p></p>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="//www.powr.io/powr.js?external-type=html"></script> 
- 			<div class="powr-comments" id="5299221d_1512835684"></div>
+	<div style="text-align:center;" id="read-stories">
+		<h3>Read Stories of Surveillance</h3>
+		<script src="//www.powr.io/powr.js?external-type=html"></script> 
+	 			<div class="powr-comments" id="5299221d_1512835684"></div>
 
-
+ 	</div>
 	<!--<div id="fh5co-product">
 		<div class="container">
 			<div class="row animate-box">
