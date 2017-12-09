@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: #060606;
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -1142,7 +1142,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: rgba(0, 0, 0, 0.8);
+  background: #003CFF;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
