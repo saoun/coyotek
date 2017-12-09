@@ -701,7 +701,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .feature-center {
   padding: 40px 20px;
-  background: rgba(255, 255, 255, 0.8);
+  background: #efefef;
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
