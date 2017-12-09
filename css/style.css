@@ -491,6 +491,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .about-content .desc {
   margin-bottom: 3em;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 .fh5co-staff {
@@ -611,6 +614,8 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 12px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -674,13 +679,14 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-weight: 100;
   display: block;
+  font-family: "Oswald", sans-serif;
 }
 #fh5co-counter .counter-label {
   margin-bottom: 0;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 #fh5co-counter .feature-center {
   padding: 40px 20px;
