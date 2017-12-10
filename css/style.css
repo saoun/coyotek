@@ -1394,7 +1394,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.5);
+  background: #003CFF;
   color: #fff;
   text-align: center;
   -webkit-border-radius: 4px;
