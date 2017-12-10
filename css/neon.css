@@ -15,10 +15,9 @@
 }
 
 .neon-text:hover {
-  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon 1.5s ease-in-out infinite alternate;
-  animation: neon 1.5s ease-in-out infinite alternate;
-
+  -webkit-animation: neon-text 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon-text 1.5s ease-in-out infinite alternate;
+  animation: neon-text 1.5s ease-in-out infinite alternate;
 }
 
 
@@ -53,7 +52,7 @@
 
 /* text */
 
-@-webkit-keyframes neon {
+@-webkit-keyframes neon-text {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
@@ -62,7 +61,7 @@
   }
 }
 
-@-moz-keyframes neon {
+@-moz-keyframes neon-text {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
@@ -71,7 +70,7 @@
   }
 }
 
-@keyframes neon {
+@keyframes neon-text {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
